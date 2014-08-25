@@ -85,6 +85,21 @@
 					<target>${jdk.version}</target>
 				</configuration>
 			</plugin>
+			
+			<plugin>
+36	          <groupId>org.apache.maven.plugins</groupId>
+37	          <artifactId>maven-deploy-plugin</artifactId>
+38	          <version>2.8.1</version>
+39	          <executions>
+40	              <execution>
+41	                  <id>default-deploy</id>
+42	                  <phase>deploy</phase>
+43	                  <goals>
+44	                      <goal>deploy</goal>
+45	                  </goals>
+46	              </execution>
+47	          </executions>
+48	      </plugin>
 		</plugins>
 	</build>
 
